@@ -1,70 +1,291 @@
-# Getting Started with Create React App
+# Ipl-Auction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://ipl-mega-auction.herokuapp.com/)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/67f92738bcce4a2c83e2b0885e3bf649)](https://www.codacy.com/gh/Coder-Srinivas/Ipl-Auction/dashboard?utm_source=github.com&utm_medium=referral&utm_content=Coder-Srinivas/Ipl-Auction&utm_campaign=Badge_Grade)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
-## Available Scripts
+![Ipl-Auction](https://socialify.git.ci/Coder-Srinivas/Ipl-Auction/image?description=1&font=Source%20Code%20Pro&forks=1&language=1&owner=1&pattern=Circuit%20Board&stargazers=1&theme=Dark)
 
-In the project directory, you can run:
+## Hit ⭐ if you like this project
 
-### `npm start`
+<h2> Overview </h2>
+ <ul>
+  <li>
+    <a href ='#tech-stack'> Tech Stack 👨‍💻</a>
+  </li>
+  <li>
+   <a href ='#inspiration'> My Inspiration 💡</a>
+  </li>
+  <li>
+   <a href ='#features'> What it does ✨</a>
+  </li>
+  <li>
+     <a href ='#build'> How I built it 🐺</a>
+  </li>
+  <li> 
+   <a href='#screenshots'>Screenshots 🖼️</a>
+   </li>
+   <li> 
+   <a href='#play'>How to play 🎭</a>
+   </li>
+    <li> 
+   <a href='#structure'>Project Structure 💪</a>
+   </li>
+ </ul>
+ 
+<h2 id='tech-stack'> Tech Stack 👨‍💻</h2>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"> <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white">
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h2 id='inspiration'> My Inspiration 💡</h2>
 
-### `npm test`
+![YoureMyInspirationBrynnElliottGIF](https://user-images.githubusercontent.com/59244289/136423443-7dd54f9f-e9b7-45a4-a700-037558abd1a1.gif)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+It began back during my childhood days, the urge to play the IPL Auction depicting real players. I used to team up with my friends and play the auction manually with a pen and paper, with a organizer to keep track. Over the last 1 year, I wondered, can I do anything to make my experience better? So I came up with the idea of building a IPL auction app, based on the MERN stack.
 
-### `npm run build`
+<h2 id='features'> What it does ✨</h2>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![AndThatsWhatItDoesDigibyteGIF](https://user-images.githubusercontent.com/59244289/136423729-777b2bb9-3d7c-4ec3-a9e3-742167451853.gif)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You can team up with your friends and dive into the fun world of auctioning IPL players. The application is capable of auctioning players belonging to various IPL Teams. The bid timer is reset with each bid and the time slot to buy a player is 10 seconds so be quick. It's a fun application to experience the the real IPL Auction with friends. Simply create an account, gather your friends and jump staright into the auction.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<h2 id='build'> How I built it 🐺</h2>
 
-### `npm run eject`
+![HowItsMadeCuriousGIF](https://user-images.githubusercontent.com/59244289/136423987-f44902a6-a93b-423d-af6d-1d2c525bdfa4.gif)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- React is used on the client side.
+- Node.js is used on the server side.
+- The news is fetched from the RSS feed of Times of India.
+- Puppeteer is used to scrape data from the IPLT20 Website.
+- Socket.io is used to establish a full-duplex connection with the server and the client.
+- HTTP-only cookies are used to store the information of the user on the client side.
+- bcrypt is used to hash the passwords of the user.
+- An auction object is created upon the creation of a new auction which stores the information of current auction.
+- User class stores the information of the user and the players purchased by him/her.
+- node-schedule is used to schedule the scraping process.
+- Mongodb database is used to store the incomming data.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<h2 id='screenshots'>Screenshots 🖼️</h2>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<div align="center">
+  <img width="45%" src="https://github.com/Coder-Srinivas/Ipl-Auction/blob/master/client/public/Images/Screenshot-1.png">
+  <img width="45%" src="https://github.com/Coder-Srinivas/Ipl-Auction/blob/master/client/public/Images/Screenshot-2.png">
+  <img width="45%" src="https://github.com/Coder-Srinivas/Ipl-Auction/blob/master/client/public/Images/Screenshot-3.png">
+  <img width="45%" src="https://github.com/Coder-Srinivas/Ipl-Auction/blob/master/client/public/Images/Screenshot-4.png">
+  <img width="45%" src="https://github.com/Coder-Srinivas/Ipl-Auction/blob/master/client/public/Images/Screenshot-5.png">
+  <img width="45%" src="https://github.com/Coder-Srinivas/Ipl-Auction/blob/master/client/public/Images/Screenshot-6.png">
+  <img width="45%" src="https://github.com/Coder-Srinivas/Ipl-Auction/blob/master/client/public/Images/Screenshot-7.png">
+</div>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<h2 id='play'>How to play 🎭</h2>
 
-## Learn More
+![TypicalDayPaningningTheRealPaningningGIF](https://user-images.githubusercontent.com/59244289/136424082-80c3bbc0-5575-472b-a4e7-97942c4b10b5.gif)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Login/Signup using your email address and password
+- Create a new auction
+- Share the generated code with your friends
+- Bid on your favourite players
+- Most important part is to enjoy
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<h2 id='structure'>Project Structure 💪</h2>
 
-### Code Splitting
+    .
+    │   .gitignore
+    │   app.js
+    │   package-lock.json
+    │   package.json
+    │   README.md
+    │
+    ├───.github
+    │   └───workflows
+    │           codeql-analysis.yml
+    │
+    ├───.husky
+    │       pre-commit
+    │
+    ├───.vscode
+    │       settings.json
+    │
+    ├───client
+    │   │   .gitignore
+    │   │   package-lock.json
+    │   │   package.json
+    │   │
+    │   ├───public
+    │   │   │   index.html
+    │   │   │
+    │   │   └───Images
+    │   │           arrow.svg
+    │   │           error.svg
+    │   │           logo.png
+    │   │           profile.jpeg
+    │   │           Screenshot-1.png
+    │   │           Screenshot-2.png
+    │   │           Screenshot-3.png
+    │   │           Screenshot-4.png
+    │   │           Screenshot-5.png
+    │   │           Screenshot-6.png
+    │   │           Screenshot-7.png
+    │   │
+    │   └───src
+    │       │   App.js
+    │       │   index.js
+    │       │
+    │       ├───components
+    │       │       AccordianComponent.js
+    │       │       Bars.js
+    │       │       CreateAuction.js
+    │       │       Error.js
+    │       │       Form.js
+    │       │       Game.js
+    │       │       Input.js
+    │       │       JoinAuction.js
+    │       │       Loading.component.js
+    │       │       Lobby.js
+    │       │       Navbar.js
+    │       │       News.js
+    │       │       NewsCard.js
+    │       │       NewsContent.js
+    │       │       NewsDate.js
+    │       │       NewsDescription.js
+    │       │       NewsImage.js
+    │       │       NewsTitle.js
+    │       │       PlayerCard.js
+    │       │       PlayerStats.js
+    │       │       Title.js
+    │       │       UserAccordian.js
+    │       │
+    │       ├───hooks
+    │       │       useFindUser.js
+    │       │       UserContext.js
+    │       │
+    │       ├───pages
+    │       │       About.js
+    │       │       Auction.js
+    │       │       Home.js
+    │       │       Loading.js
+    │       │       Login.js
+    │       │       PreviousAuctions.js
+    │       │       SignUp.js
+    │       │
+    │       ├───routes
+    │       │       PrivateRoute.js
+    │       │       PublicRoute.js
+    │       │
+    │       ├───sass
+    │       │   │   main.scss
+    │       │   │
+    │       │   ├───base
+    │       │   │       animations.scss
+    │       │   │       reset.scss
+    │       │   │
+    │       │   ├───components
+    │       │   │       bars.scss
+    │       │   │       button.scss
+    │       │   │       create-auction.scss
+    │       │   │       error.scss
+    │       │   │       form.scss
+    │       │   │       games.scss
+    │       │   │       loading.scss
+    │       │   │       lobby.scss
+    │       │   │       navbar.scss
+    │       │   │       news.scss
+    │       │   │       playerCard.scss
+    │       │   │       title.scss
+    │       │   │       user-accordian.scss
+    │       │   │
+    │       │   ├───pages
+    │       │   │       about.scss
+    │       │   │       auction.scss
+    │       │   │       home.scss
+    │       │   │       loading.scss
+    │       │   │       previous-auction.scss
+    │       │   │
+    │       │   └───utilities
+    │       │           classes.scss
+    │       │           mixins.scss
+    │       │           variables.scss
+    │       │
+    │       ├───services
+    │       │       auction.service.js
+    │       │       auth.service.js
+    │       │       news.service.js
+    │       │       players.service.js
+    │       │       sockets.service.js
+    │       │
+    │       └───utilities
+    │               axiosInstance.js
+    │               handleChanges.js
+    │               validation.js
+    │
+    ├───controller
+    │       auction.js
+    │       bidding.js
+    │       game.js
+    │       user.js
+    │
+    ├───data
+    │       squads.json
+    │
+    ├───database
+    │   │   connection.js
+    │   │
+    │   └───models
+    │           user.model.js
+    │
+    ├───middleware
+    │       auth.js
+    │
+    ├───routes
+    │       auction.route.js
+    │       news.route.js
+    │       socket.route.js
+    │       user.route.js
+    │
+    └───utilities
+            players.js...
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Steps to get the project running locally on your machine
 
-### Analyzing the Bundle Size
+#### Setting Up Environment Variables
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Create a .env file in the backend directory
+2. Initialize DEV_MONGO_URL to mongodb://localhost:27017/
+3. Initialize DEV_REACT_URL to http://localhost:3000
+4. Initialize DEV_SERVER_URL to http://localhost:8000
+5. Initialize SECRET to a JWT secret key
 
-### Making a Progressive Web App
+#### Installing the dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Run the following command in the root
+of the project to install the packages
+on the server side:
 
-### Advanced Configuration
+```
+npm i
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Run the following command in the root
+of the project to install the packages
+on the client side:
 
-### Deployment
+```
+cd client
+npm i
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+#### Running the project
 
-### `npm run build` fails to minify
+Run the following command in the root
+to get the client side and the server
+side running concurrently:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+npm run dev
+```
+
+## Note
+
+Keep the monogodb database running locally before running the application.

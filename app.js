@@ -18,7 +18,7 @@ const server = http.createServer(app);
 
 const io = socketio(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: ["http://localhost:3000", "https://player-bid-app.onrender.com"],
     credentials: true,
   },
 });
@@ -27,7 +27,7 @@ const io = socketio(server, {
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: ["http://localhost:3000", "https://player-bid-app.onrender.com"],
     credentials: true,
   })
 );
